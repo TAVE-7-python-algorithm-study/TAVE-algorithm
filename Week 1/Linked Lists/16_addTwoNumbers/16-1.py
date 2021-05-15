@@ -4,7 +4,7 @@ from typing import List
 # 풀이 1. 자료형 변환
 # 연결 리스트를 문자열 리스트로 이어 붙인 다음, 숫자로 변환하여 계산한 후, 연결 리스트로 바꾸기
 
-# 연결 리스트를 생성하는 클래스
+# 연결 리스트의 노드를 생성하는 클래스
 class ListNode:
     def __init__(self, x):
         self.val = x
