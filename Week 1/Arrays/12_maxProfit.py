@@ -1,4 +1,5 @@
 # 7장 배열 - 12번 주식을 사고팔기 가장 좋은 시점 (난이도2)
+import sys
 from typing import List
 
 # 풀이1. 브루트 포스로 계산
@@ -23,3 +24,6 @@ def maxProfit(prices: List[int]) -> int:
         min_price = min(min_price, price)
         profit = max(profit, price-min_price) # (현재 시점 - 저점)
     return profit
+
+ls = [7,1,5,3,6,4]
+print(maxProfit(ls))
