@@ -9,7 +9,3 @@ def maxProfit(prices: List[int]) -> int:
         min_price = min(min_price, price)
         profit = max(profit, price-min_price) # (현재 시점 - 저점)
     return profit
-
-def main() :
-  ls = [7,1,5,3,6,4]
-  print(maxProfit(ls))
