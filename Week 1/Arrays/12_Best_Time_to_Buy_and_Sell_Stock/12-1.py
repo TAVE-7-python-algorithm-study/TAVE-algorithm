@@ -11,7 +11,4 @@ def maxProfit(prices: List[int]) -> int:
         for j in range(index, len(prieces)):
             max_price = max(prices[j] - price, max_price)
     return max_price
-    
-def main() :
-  ls = [7,1,5,3,6,4]
-  print(maxProfit(ls))
+   
