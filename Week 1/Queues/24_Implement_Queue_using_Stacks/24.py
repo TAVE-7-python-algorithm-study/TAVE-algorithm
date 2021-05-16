@@ -17,7 +17,7 @@ class MyQueue:
         # output이 없을 경우, 모두 재입력하기
         if not self.output:
             while self.input:
-                self.output.apppend(self.input.pop())
+                self.output.append(self.input.pop())
         return self.output[-1]
 
     # pop()과 peek()는 같은 요소를 반환하기 때문에, peek()를 호출하고 여기에 반환값을 재입력함
