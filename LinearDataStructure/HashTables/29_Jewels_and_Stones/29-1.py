@@ -1,3 +1,4 @@
+# 풀이 1: 해시 테이블을 이용한 풀이
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         freqs = {}
