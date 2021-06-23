@@ -20,6 +20,7 @@ class Solution:
                 
             # 재귀 호출하여 순열을 계속 생성
             for e in elements:
+                # 자신을 제외한 모든 요소를 next_elements로 처리하기
                 next_elements = elements[:]
                 next_elements.remove(e)
                 
