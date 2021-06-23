@@ -23,7 +23,7 @@ class Solution:
         # dist: 해당 정점과, 출발 지점 K에서부터 해당 정점까지 걸리는 시간 쌍으로 구성된 힙
         dist = collections.defaultdict(int)
         
-        # 우선순위 큐의 '최솟값'을 기준으로 정접까지의 최단 경로를 삽입
+        # 우선순위 큐의 '최솟값'을 기준으로 정점까지의 최단 경로를 삽입
         while Q:
             time, node = heapq.heappop(Q)
             # 만약, 이미 dist에 해당 node key 값이 존재한다면 그 값은 버리기
