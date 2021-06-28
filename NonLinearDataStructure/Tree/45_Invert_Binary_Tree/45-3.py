@@ -24,4 +24,4 @@ class Solution:
                 stack.append(node.left)
                 stack.append(node.right)
         
-    return root
+        return root
