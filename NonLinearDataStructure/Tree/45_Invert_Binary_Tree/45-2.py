@@ -18,9 +18,10 @@ class Solution:
         while queue:
             node = queue.popleft()
             # 부모 노드부터 시작해 내려가며 swap 진행
-            node.left, node.right = node.right, node.left
-            
-            queue.append(node.left)
-            queue.append(node.right)
+            if node:
+                node.left, node.right = node.right, node.left
+
+                queue.append(node.left)
+                queue.append(node.right)
             
         return root
