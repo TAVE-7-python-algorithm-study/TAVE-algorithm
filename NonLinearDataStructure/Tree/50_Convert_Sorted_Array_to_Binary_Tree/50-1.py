@@ -1,4 +1,5 @@
 from typing import List
+# 50번 정렬된 배열의 이진 탐색 트리 변환
 
 # 이진 트리 노드를 정의
 class TreeNode:
