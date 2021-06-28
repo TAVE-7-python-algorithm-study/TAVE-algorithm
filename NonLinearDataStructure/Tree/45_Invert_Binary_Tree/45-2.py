@@ -11,15 +11,16 @@ class TreeNode:
         self.right = None
         
 # BFS 풀이를 위해 queue를 정의
-def invertTree(self, root: TreeNode) -> TreeNode:
-    queue = collections.deque([root])
-    
-    while queue:
-        node = queue.popleft()
-        # 부모 노드부터 시작해 내려가며 swap 진행
-        node.left, node.right = node.right, node.left
+class Solution:
+    def invertTree(self, root: TreeNode) -> TreeNode:
+        queue = collections.deque([root])
         
-        queue.append(node.left)
-        queue.append(node.right)
-        
-    return root
+        while queue:
+            node = queue.popleft()
+            # 부모 노드부터 시작해 내려가며 swap 진행
+            node.left, node.right = node.right, node.left
+            
+            queue.append(node.left)
+            queue.append(node.right)
+            
+        return root
